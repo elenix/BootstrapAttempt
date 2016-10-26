@@ -1,0 +1,68 @@
+.jumbotron {
+    
+    text-align: center;
+    color: aliceblue;
+    background: url(icon/bg.jpg) center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 50px;
+    
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+#email {
+              
+    width: 250px;
+              
+}
+
+#subscibe {
+    
+    font-family: courier;
+}
+
+#appSummary {
+              
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 50px;
+
+}
+
+#footer {
+         
+    color: azure;
+    background: url(icon/rumput.jpg) center center;
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 150px;
+    
+}
+
+#appIcon {
+    
+    width: 20%;
+    height: 20%;
+    margin-top: 10px;
+    
+}
+
+.card{
+    
+    width: inherit;
+    height: inherit;
+    
+}
