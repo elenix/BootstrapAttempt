@@ -11,6 +11,11 @@
     
 }
 
+.navbar {
+    
+    background-color: #0275D8;
+}
+
 hr {
     display: block;
     height: 1px;
@@ -54,8 +59,7 @@ hr {
 
 #appIcon {
     
-    width: 20%;
-    height: 20%;
+    width: 300px;
     margin-top: 10px;
     
 }

@@ -14,22 +14,88 @@
     <!-- CSS style -->
     <link rel="stylesheet" type="text/css" href="Style.css">
     
+    <!-- Java Script -->
+    
+    
 </head>
   
     <body>
     
-    <nav class="navbar navbar-fixed-top navbar-full navbar-light bg-faded">
+    <nav class="navbar navbar-fixed-top navbar-full navbar-light">
         
-        <a class="navbar-brand" href="#">EL-ENIX</a>
+        <a class="navbar-brand float-xs-left" href="#">EL-ENIX</a>
         
     <form class="form-inline float-xs-right">
-        <input class="form-control" type="text" placeholder="Username">
-        <input class="form-control" type="password" placeholder="Password">
-        <button class="btn btn-success" type="submit">Login</button>
-        <button class="btn btn-success" type="submit">Register</button>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModalLogin">Login</button>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModalRegister">Register</button>
     </form>
         
     </nav>
+        
+     <!-- Modal Login -->
+<div class="modal fade bd-example-modal-sm" id="myModalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Login Session</h4>
+      </div>
+      <div class="modal-body">
+          <form>
+            <div class="form-group">
+             <input class="form-control" type="text" placeholder="Username">
+            </div>
+            <div class="form-group">
+             <input class="form-control" type="password" placeholder="Password">
+            </div>
+          </form>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" data-dismiss="modal">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Modal Register -->
+<div class="modal fade bd-example-modal-sm" id="myModalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Registration Session</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="form-group">
+              <label class="form-control-label">Username:</label>
+              <input type="text" class="form-control" id="username">
+            </div>
+            <div class="form-group">
+             <label class="form-control-label">Email:</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="form-control-label">Password:</label>
+              <input type="Password" class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="form-control-label">Confirmed Password:</label>
+              <input type="Password" class="form-control">
+            </div>
+          </form>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" data-dismiss="modal">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
         
     <div class="jumbotron jumbotron-fluid" id="jumbotron">
         <div class="container">
@@ -56,7 +122,7 @@
           
     </div>
         
-        <div class="container" id="about">
+        <div class="container">
       <div class="card-deck-wrapper">
     <div class="card-deck">    
     <div class="card text-xs-center">
